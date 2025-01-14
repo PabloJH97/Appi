@@ -1,8 +1,10 @@
 package com.pablojesushurtadohidalgo.appi.data.repositories.model
 
-data class Response(
+import kotlin.Result
+
+data class Response<T>(
     val page: Int,
-    val results: List<Result>,
+    val results: PokemonListModel,
     val total_pages: Int,
-    val total_results: Int
+    val isSuccessful: Boolean
 )

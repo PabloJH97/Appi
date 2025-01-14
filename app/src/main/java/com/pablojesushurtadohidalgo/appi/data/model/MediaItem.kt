@@ -1,11 +1,10 @@
 package com.pablojesushurtadohidalgo.appi.data.model
 
+
+import com.pablojesushurtadohidalgo.appi.data.repositories.model.Sprites
+
 data class MediaItem(
     val id: Int,
-    val title: String,
-    val photo: String,
-    val originalLanguage: String,
-    val originalTitle: String,
-    val overview: String,
-    val voteAverage: Double
+    val name: String,
+    val sprites: String,
 )

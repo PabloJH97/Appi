@@ -14,8 +14,8 @@ object repositoryList {
             lista = (1..100).map {
                 MediaItem(
                     id = it,
-                    title = "Titulo $it",
-                    photo = "https://loremflickr.com/400/400/$nombre?lock=$it"
+                    name = "$nombre",
+                    sprites = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$it"
                 )
             } as MutableList<MediaItem>
         }

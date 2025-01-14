@@ -103,7 +103,7 @@ fun Imagen(item: MediaItem, modifier: Modifier = Modifier) {
 
         Image(
             painter = rememberAsyncImagePainter(
-                model = item.photo,
+                model = item.sprites,
                 imageLoader = ImageLoader.Builder(context).crossfade(true).build()
             ),
             contentDescription = null,
@@ -135,7 +135,7 @@ fun Title(item: MediaItem) {
             .padding(16.dp)
     ) {
         Text(
-            text = item.title,
+            text = item.name,
             style = MaterialTheme.typography.labelLarge,
             overflow = TextOverflow.Ellipsis,
         )

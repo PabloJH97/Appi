@@ -11,16 +11,16 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.pjurado.navegaciondetalle.ui.navegacion.Navegacion
-import com.pjurado.navegaciondetalle.ui.screen.ListaScreen.ListaScreen
-import com.pjurado.navegaciondetalle.ui.theme.NavegacionDetalleTheme
+import com.pablojesushurtadohidalgo.appi.ui.navegacion.Navegacion
+import com.pablojesushurtadohidalgo.appi.ui.screen.ListaScreen.ListaScreen
+import com.pablojesushurtadohidalgo.appi.ui.theme.AppiTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            NavegacionDetalleTheme {
+            AppiTheme {
                 Navegacion()
             }
         }
